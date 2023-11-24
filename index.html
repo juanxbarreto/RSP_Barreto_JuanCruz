@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="styles.css">
+  <title>Barreto Juan Cruz</title>
+</head>
+<body id="cuerpo">
+  <div class="spinner-container" id="spinner">
+    <div class="spinner"></div>
+  </div>
+  <form id="form-data-container">
+    <div id="title-form">
+      Fomulario Datos
+    </div>
+    <div id="table-container">
+      <table id="data-table">
+        <thead id="header"></thead>
+        <tbody id="table-body"></tbody>
+      </table>
+    </div>
+    <div id="buttons-container">
+      <div>
+        <button type="submit" id="btn_add">Agregar</button>
+      </div>
+    </div>
+  </form>
+  <form id="form-amb-container" class="hidden">
+    <h1 id="title-form">
+      ABM
+    </h1>
+    <div id="inputs-container">
+      <div id="default-inputs-container"></div>
+      <div id="input-field">
+        <label for="dll-type-vehicle">Tipo:</label>
+        <select id="dll-type-vehicle" name="types-vehicles">
+          <option value="aereo">Aereo</option>
+          <option value="terrestre">Terrestre</option>
+        </select>
+      </div>
+      <div id="dynamic-inputs-container"></div>
+    </div>
+    <div id="buttons-container">
+      <div>
+        <button type="submit" id="btn-accept">Aceptar</button>
+        <button type="button" id="btn-cancel">Cancelar</button>
+      </div>
+    </div>
+  </form>
+  <script src="constant.js"></script>
+  <script src="class/vehiculo.js"></script>
+  <script src="class/aereo.js"></script>
+  <script src="class/terrestre.js"></script>
+  <script src="scripts.js"></script>
+</body>
+</html>
